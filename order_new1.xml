@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders>
+    <order order-no="DEV00081131">
+        <order-date>2019-12-16T07:03:08.000Z</order-date>
+        <created-by>storefront</created-by>
+        <original-order-no>DEV00081131</original-order-no>
+        <currency>USD</currency>
+        <customer-locale>en_US</customer-locale>
+        <taxation>net</taxation>
+        <invoice-no>00438020</invoice-no>
+        <customer>
+            <customer-name>Guest User</customer-name>
+            <customer-email>guest@accenture.com</customer-email>
+            <billing-address>
+                <first-name>Guest</first-name>
+                <last-name>User</last-name>
+                <address1>Atlantic Blvd</address1>
+                <city>Los Angeles</city>
+                <postal-code>10019</postal-code>
+                <state-code>CA</state-code>
+                <country-code>us</country-code>
+                <phone>2025551104</phone>
+            </billing-address>
+        </customer>
+        <status>
+            <order-status>COMPLETED</order-status>
+            <shipping-status>NOT_SHIPPED</shipping-status>
+            <confirmation-status>CONFIRMED</confirmation-status>
+            <payment-status>NOT_PAID</payment-status>
+        </status>
+        <current-order-no>DEV00081131</current-order-no>
+        <product-lineitems>
+            <product-lineitem>
+                <net-price>865.00</net-price>
+                <tax>65.25</tax>
+                <gross-price>930.25</gross-price>
+                <base-price>865.00</base-price>
+                <lineitem-text>Python-Embossed Leather Knee-High Boots</lineitem-text>
+                <position>1</position>
+                <product-id>6003950450</product-id>
+                <product-name>Python-Embossed Leather Knee-High Boots</product-name>
+                <quantity unit="">1.0</quantity>
+                <tax-rate>0.0</tax-rate>
+                <shipment-id>00422020</shipment-id>
+                <gift>false</gift>
+            </product-lineitem>
+        </product-lineitems>
+        <shipping-lineitems>
+            <shipping-lineitem>
+                <net-price>0.00</net-price>
+                <tax>0.00</tax>
+                <gross-price>0.00</gross-price>
+                <base-price>0.00</base-price>
+                <lineitem-text>Shipping</lineitem-text>
+                <item-id>STANDARD_SHIPPING</item-id>
+                <shipment-id>00422020</shipment-id>
+                <tax-rate>0.0</tax-rate>
+            </shipping-lineitem>
+        </shipping-lineitems>
+        <shipments>
+            <shipment shipment-id="00422020">
+                <status>
+                    <shipping-status>NOT_SHIPPED</shipping-status>
+                </status>
+                <shipping-method>IMX001</shipping-method>
+                <shipping-address>
+                    <first-name>Guest</first-name>
+                    <last-name>User</last-name>
+                    <address1>Atlantic Blvd</address1>
+                    <city>Los Angeles</city>
+                    <postal-code>10019</postal-code>
+                    <state-code>CA</state-code>
+                    <country-code>us</country-code>
+                    <phone>2025551104</phone>
+                </shipping-address>
+                <gift>false</gift>
+                <totals>
+                    <merchandize-total>
+                        <net-price>865.00</net-price>
+                        <tax>65.25</tax>
+                        <gross-price>930.25</gross-price>
+                    </merchandize-total>
+                    <adjusted-merchandize-total>
+                        <net-price>865.00</net-price>
+                        <tax>65.25</tax>
+                        <gross-price>930.25</gross-price>
+                    </adjusted-merchandize-total>
+                    <shipping-total>
+                        <net-price>0.00</net-price>
+                        <tax>0.00</tax>
+                        <gross-price>0.00</gross-price>
+                    </shipping-total>
+                    <adjusted-shipping-total>
+                        <net-price>0.00</net-price>
+                        <tax>0.00</tax>
+                        <gross-price>0.00</gross-price>
+                    </adjusted-shipping-total>
+                    <shipment-total>
+                        <net-price>865.00</net-price>
+                        <tax>65.25</tax>
+                        <gross-price>930.25</gross-price>
+                    </shipment-total>
+                </totals>
+            </shipment>
+        </shipments>
+        <totals>
+            <merchandize-total>
+                <net-price>865.00</net-price>
+                <tax>65.25</tax>
+                <gross-price>930.25</gross-price>
+                <price-adjustments>
+                    <price-adjustment>
+                        <net-price>-129.75</net-price>
+                        <tax>0.00</tax>
+                        <gross-price>-129.75</gross-price>
+                        <base-price>-129.75</base-price>
+                        <lineitem-text>SPEND MORE, SAVE MORE</lineitem-text>
+                        <tax-basis>-129.75</tax-basis>
+                        <promotion-id>20180614_SMSM</promotion-id>
+                        <campaign-id>20180614_SMSM</campaign-id>
+                    </price-adjustment>
+                </price-adjustments>
+            </merchandize-total>
+            <adjusted-merchandize-total>
+                <net-price>735.25</net-price>
+                <tax>65.25</tax>
+                <gross-price>800.50</gross-price>
+            </adjusted-merchandize-total>
+            <shipping-total>
+                <net-price>0.00</net-price>
+                <tax>0.00</tax>
+                <gross-price>0.00</gross-price>
+            </shipping-total>
+            <adjusted-shipping-total>
+                <net-price>0.00</net-price>
+                <tax>0.00</tax>
+                <gross-price>0.00</gross-price>
+            </adjusted-shipping-total>
+            <order-total>
+                <net-price>735.25</net-price>
+                <tax>65.25</tax>
+                <gross-price>800.50</gross-price>
+            </order-total>
+        </totals>
+        <payments>
+            <payment>
+                <credit-card>
+                    <card-type>VISA</card-type>
+/                    <card-number>XXXX-XXXX-XXXX-1111</card-number>
+                    <expiration-month>10</expiration-month>
+                    <expiration-year>2020</expiration-year>
+                    <custom-attributes>
+                        <custom-attribute attribute-id="authToken">14a85a9b86b0b26b242844a322e85fcc</custom-attribute>
+                        <custom-attribute attribute-id="paymentMethodToken">t+/T0ZfbxjqCkaf6EcUGluXq8bzXZWugQZKoqbqmLb7DG0hv8kKb4zC1DhVTDZo1vsCObW0u6mDr5bGyyRSu+QvCNlQwZSweXRHupYbYLjg=</custom-attribute>
+                    </custom-attributes>
+                </credit-card>
+                <amount>800.50</amount>
+            </payment>
+        </payments>
+        <remoteHost>208.52.157.31</remoteHost>
+        <custom-attributes>
+            <custom-attribute attribute-id="shopatron_order_number">108600301</custom-attribute>
+            <custom-attribute attribute-id="shopatron_orders">DEV00081131</custom-attribute>
+            <custom-attribute attribute-id="shopatron_orders_status">success</custom-attribute>
+        </custom-attributes>
+    </order>
+
+    <order order-no="DEV00081130">
+        <order-date>2019-12-16T06:49:19.000Z</order-date>
+        <created-by>storefront</created-by>
+        <original-order-no>DEV00081130</original-order-no>
+        <currency>USD</currency>
+        <customer-locale>en_US</customer-locale>
+        <taxation>net</taxation>
+        <invoice-no>00438019</invoice-no>
+        <customer>
+            <customer-no>00219001</customer-no>
+            <customer-name>Mathew Mizo</customer-name>
+            <customer-email>mizomath@email.com</customer-email>
+            <billing-address>
+                <first-name>Mizo Address</first-name>
+                <last-name>Mizo</last-name>
+                <address1>Atlantic Blvd</address1>
+                <address2>United States</address2>
+                <city>Los Angeles</city>
+                <postal-code>12345</postal-code>
+                <state-code>AK</state-code>
+                <country-code>us</country-code>
+                <phone>2025551104</phone>
+            </billing-address>
+        </customer>
+        <status>
+            <order-status>COMPLETED</order-status>
+            <shipping-status>NOT_SHIPPED</shipping-status>
+            <confirmation-status>CONFIRMED</confirmation-status>
+            <payment-status>NOT_PAID</payment-status>
+        </status>
+        <current-order-no>DEV00081130</current-order-no>
+        <product-lineitems>
+            <product-lineitem>
+                <net-price>865.00</net-price>
+                <tax>55.36</tax>
+                <gross-price>920.36</gross-price>
+                <base-price>865.00</base-price>
+                <lineitem-text>Python-Embossed Leather Knee-High Boots</lineitem-text>
+                <position>1</position>
+                <product-id>6003950448</product-id>
+                <product-name>Python-Embossed Leather Knee-High Boots</product-name>
+                <quantity unit="">1.0</quantity>
+                <tax-rate>0.0</tax-rate>
+                <shipment-id>00422019</shipment-id>
+                <gift>false</gift>
+            </product-lineitem>
+            <product-lineitem>
+                <net-price>139.00</net-price>
+                <tax>8.90</tax>
+                <gross-price>147.90</gross-price>
+                <base-price>139.00</base-price>
+                <lineitem-text>Elaine Silk Blouse</lineitem-text>
+                <position>2</position>
+                <product-id>6003785689</product-id>
+                <product-name>Elaine Silk Blouse</product-name>
+                <quantity unit="">1.0</quantity>
+                <tax-rate>0.0</tax-rate>
+                <shipment-id>00422019</shipment-id>
+                <gift>false</gift>
+            </product-lineitem>
+            <product-lineitem>
+                <net-price>1290.00</net-price>
+                <tax>82.56</tax>
+                <gross-price>1372.56</gross-price>
+                <base-price>1290.00</base-price>
+                <lineitem-text>High Neck Pleated Midi Dress</lineitem-text>
+                <position>3</position>
+                <product-id>6004480523</product-id>
+                <product-name>High Neck Pleated Midi Dress</product-name>
+                <quantity unit="">1.0</quantity>
+                <tax-rate>0.0</tax-rate>
+                <shipment-id>00422019</shipment-id>
+                <gift>false</gift>
+            </product-lineitem>
+        </product-lineitems>
+        <shipping-lineitems>
+            <shipping-lineitem>
+                <net-price>0.00</net-price>
+                <tax>0.00</tax>
+                <gross-price>0.00</gross-price>
+                <base-price>0.00</base-price>
+                <lineitem-text>Shipping</lineitem-text>
+                <item-id>STANDARD_SHIPPING</item-id>
+                <shipment-id>00422019</shipment-id>
+                <tax-rate>0.0</tax-rate>
+            </shipping-lineitem>
+        </shipping-lineitems>
+        <shipments>
+            <shipment shipment-id="00422019">
+                <status>
+                    <shipping-status>NOT_SHIPPED</shipping-status>
+                </status>
+                <shipping-method>IMX001</shipping-method>
+                <shipping-address>
+                    <first-name>Mizo Address</first-name>
+                    <last-name>Mizo</last-name>
+                    <address1>Atlantic Blvd</address1>
+                    <address2>United States</address2>
+                    <city>Los Angeles</city>
+                    <postal-code>12345</postal-code>
+                    <state-code>AK</state-code>
+                    <country-code>us</country-code>
+                    <phone>2025551104</phone>
+                </shipping-address>
+                <gift>false</gift>
+                <totals>
+                    <merchandize-total>
+                        <net-price>2294.00</net-price>
+                        <tax>146.82</tax>
+                        <gross-price>2440.82</gross-price>
+                    </merchandize-total>
+                    <adjusted-merchandize-total>
+                        <net-price>2294.00</net-price>
+                        <tax>146.82</tax>
+                        <gross-price>2440.82</gross-price>
+                    </adjusted-merchandize-total>
+                    <shipping-total>
+                        <net-price>0.00</net-price>
+                        <tax>0.00</tax>
+                        <gross-price>0.00</gross-price>
+                    </shipping-total>
+                    <adjusted-shipping-total>
+                        <net-price>0.00</net-price>
+                        <tax>0.00</tax>
+                        <gross-price>0.00</gross-price>
+                    </adjusted-shipping-total>
+                    <shipment-total>
+                        <net-price>2294.00</net-price>
+                        <tax>146.82</tax>
+                        <gross-price>2440.82</gross-price>
+                    </shipment-total>
+                </totals>
+            </shipment>
+        </shipments>
+        <totals>
+            <merchandize-total>
+                <net-price>2294.00</net-price>
+                <tax>146.82</tax>
+                <gross-price>2440.82</gross-price>
+                <price-adjustments>
+                    <price-adjustment>
+                        <net-price>-458.80</net-price>
+                        <tax>0.00</tax>
+                        <gross-price>-458.80</gross-price>
+                        <base-price>-458.80</base-price>
+                        <lineitem-text>SPEND MORE, SAVE MORE</lineitem-text>
+                        <tax-basis>-458.80</tax-basis>
+                        <promotion-id>20180614_SMSM</promotion-id>
+                        <campaign-id>20180614_SMSM</campaign-id>
+                    </price-adjustment>
+                </price-adjustments>
+            </merchandize-total>
+            <adjusted-merchandize-total>
+                <net-price>1835.20</net-price>
+                <tax>146.82</tax>
+                <gross-price>1982.02</gross-price>
+            </adjusted-merchandize-total>
+            <shipping-total>
+                <net-price>0.00</net-price>
+                <tax>0.00</tax>
+                <gross-price>0.00</gross-price>
+            </shipping-total>
+            <adjusted-shipping-total>
+                <net-price>0.00</net-price>
+                <tax>0.00</tax>
+                <gross-price>0.00</gross-price>
+            </adjusted-shipping-total>
+            <order-total>
+                <net-price>1835.20</net-price>
+                <tax>146.82</tax>
+                <gross-price>1982.02</gross-price>
+            </order-total>
+        </totals>
+        <payments>
+            <payment>
+                <credit-card>
+                    <card-type>Master Card</card-type>
+                    <card-number>XXXX-XXXX-XXXX-4444</card-number>
+                    <expiration-month>1</expiration-month>
+                    <expiration-year>2021</expiration-year>
+                    <custom-attributes>
+                        <custom-attribute attribute-id="authToken">577e7654695bc1164213e51cad2e7879</custom-attribute>
+                        <custom-attribute attribute-id="paymentMethodToken">OJGVx5dELXe14n9eHSOTCGYQFu+jLgcEnclYG8fKF7UoaEhRBmF+1/WGg0E9CPByMkcTUCHbBFinQiLMoxGnEc+tPq4RuQeVznpapcdYcsg=</custom-attribute>
+                    </custom-attributes>
+                </credit-card>
+                <amount>1982.02</amount>
+            </payment>
+        </payments>
+        <remoteHost>208.78.111.92</remoteHost>
+        <custom-attributes>
+            <custom-attribute attribute-id="shopatron_order_number">108597619</custom-attribute>
+            <custom-attribute attribute-id="shopatron_orders">DEV00081130</custom-attribute>
+            <custom-attribute attribute-id="shopatron_orders_status">success</custom-attribute>
+        </custom-attributes>
+    </order>
+
+</orders>
