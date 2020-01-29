@@ -10,9 +10,9 @@ from excel_users import extract_users
 
 driver=webdriver.Chrome(executable_path="C:\\Users\mkottak\git\intermix\IMX\GAP_Intermix\\target\classes\webdriver\\chromedriver.exe")
 
-driver.get("https://dev40-na-gapinc.demandware.net/on/demandware.store/Sites-Intermix-Site/en_US/Home-Show")
+#driver.get("https://dev40-na-gapinc.demandware.net/on/demandware.store/Sites-Intermix-Site/en_US/Home-Show")
 
-#driver.get("https://dev12-na-gapinc.demandware.net/on/demandware.store/Sites-Intermix-Site/en_US/Home-Show")
+driver.get("https://dev12-na-gapinc.demandware.net/on/demandware.store/Sites-Intermix-Site/en_US/Home-Show")
 
 modalLoginRegister ="login-register"
 mobLoginRegister = ".account-login-page"
@@ -36,7 +36,7 @@ loc = ("C:\\Users\\mkottak\\Downloads\\FireShot\\newusers.xls")
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
 
-for i in range (127,130):
+for i in range (142,145):
     # For row 0 and column 0
     email=sheet.cell_value(i, 0)
     firname=sheet.cell_value(i, 1)
@@ -67,7 +67,7 @@ for i in range (127,130):
         print("hi")
 
     driver.implicitly_wait(10)
-    input("for address:")
+    #input("for address:")
     driver.find_element_by_xpath("(//h2[@class='account-sub-headers'][contains(text,'')])[5]").click()
     driver.find_element_by_xpath("//a[@class='btn-secondary']").click()
     driver.implicitly_wait(5)

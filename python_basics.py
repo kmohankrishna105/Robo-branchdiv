@@ -44,7 +44,7 @@ q={'sit':'url1','uat':'url2',3:4}
 
 #nested.....list,dictionary
 
-my_dict={'key':'value','userid':13,'password':14}
+my_dict={'key1':'value1','userid':13,'password':14}
 print(type(my_dict))
 
 print(my_dict['userid'])
@@ -57,7 +57,8 @@ employees={'data':
                 'emp2':{'user':2,'dept':'dev'},
                 'emp3':{'user':3,'dept':'admin'}}}
 
-#print(employees['data']['emp1']['dept'][1])
+
+print(employees['data']['emp1']['dept'][0])
 
 print(my_dict.keys())
 print(my_dict.values())
