@@ -1,4 +1,7 @@
+"""
 
+Class variables and instance variables discussion with example
+"""
 class Duster:
     shape='Rectangle'
     length=20
@@ -50,17 +53,3 @@ print(b1.Office_Type().type_dir['Plastic'])
 
 account=set()
 account.add('Goutham')
-
-read or write
-
-file open()
-write
-
-2
-
-open file= obj
-write- obj
-close - delete
-
-
-with fil

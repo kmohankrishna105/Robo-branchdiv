@@ -1,3 +1,9 @@
+
+"""
+
+Open Firefox browser with defined capabilities
+"""
+
 from selenium import webdriver
 
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities

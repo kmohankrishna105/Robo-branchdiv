@@ -35,8 +35,15 @@ preorder2_url = 'https://development-sfcc.intermixonline.com/on/demandware.store
 cart_url = 'https://development-sfcc.intermixonline.com/cart'
 normal1_url = "https://development-sfcc.intermixonline.com/on/demandware.store/Sites-Intermix-Site/en_US/Product-Variation?pid=93570G&dwvar_93570G_size=70&dwvar_93570G_color=020"
 normal2_url = "https://development-sfcc.intermixonline.com/on/demandware.store/Sites-Intermix-Site/en_US/Product-Variation?pid=93570G&dwvar_93570G_size=70&dwvar_93570G_color=020"
-"""
 
+preorder1_url = 'https://dev12-na-gapinc.demandware.net/s/Intermix/faithfull-the-brand/brigit-mini-dress/6000300198.html'
+preorder2_url = 'http://dev12-na-gapinc.demandware.net/s/Intermix/rag-bone%2Fjean/floral-vintage-tee/6000085244.html'
+cart_url = 'https://dev12-na-gapinc.demandware.net/s/Intermix/cart'
+normal1_url = "http://dev12-na-gapinc.demandware.net/s/Intermix/intermix/aisley-knit-cami/8888341964.html"
+normal2_url = "http://dev12-na-gapinc.demandware.net/s/Intermix/hansel-from-basel/back-seam-tulle-sheer-socks/6000375190.html"
+
+
+"""
 preorder1_url = 'https://dev40-na-gapinc.demandware.net/s/Intermix/faithfull-the-brand/brigit-mini-dress/6000300198.html'
 preorder2_url = 'http://dev40-na-gapinc.demandware.net/s/Intermix/rag-bone%2Fjean/floral-vintage-tee/6000085244.html'
 cart_url = 'https://dev40-na-gapinc.demandware.net/s/Intermix/cart'
@@ -99,7 +106,7 @@ driver.switch_to.window(driver.window_handles[4])
 driver.get(normal2_url)
 
 
-for i in range (0,6):
+for i in range (0,4):
     # For row 0 and column 0
     q1=sheet.cell_value(i, 0)
     q2=sheet.cell_value(i, 1)

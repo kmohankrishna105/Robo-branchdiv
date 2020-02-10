@@ -1,7 +1,6 @@
 import xlrd
 import xlwt
 
-
 loc = ("C:\\Users\\mkottak\\Downloads\\FireShot\\newusers.xls")
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
@@ -12,8 +11,8 @@ for i in range(0, 2):
     firname = sheet.cell_value(i, 1)
     print(email,firname)
 
-#q=xlwt.Workbook("1.xls")
-#q.get_sheet()
+q=xlwt.Workbook("1.xls")
+write_obj=q.get_sheet("fi")
 
-wb.get_sheet(0).write(3,1,"Hyper")
+write_obj.write(3,1,"Hyper")
 wb.save()

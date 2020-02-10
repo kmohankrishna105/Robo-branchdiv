@@ -1,3 +1,9 @@
+"""
+Compare two files or strings and validate if both are same
+Hint: Place a delimiter to validate each item of the file
+"""
+
+import unittest
 fileq="hi-r-t-l"
 filew="hi-r-t-99"
 
@@ -25,7 +31,10 @@ def compare_file_header(file1,file2):
 #
 print(compare_file_header(fileq,filew))
 
-#====================
+"""
+verify  each item of an list and place a counter for item
+example: 1 of 7,2 of 7,3 of 7.....7 of 7
+"""
 
 c_count=0
 t_count=0

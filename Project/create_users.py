@@ -36,7 +36,7 @@ loc = ("C:\\Users\\mkottak\\Downloads\\FireShot\\newusers.xls")
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
 
-for i in range (142,145):
+for i in range (155,164):
     # For row 0 and column 0
     email=sheet.cell_value(i, 0)
     firname=sheet.cell_value(i, 1)
@@ -68,7 +68,7 @@ for i in range (142,145):
 
     driver.implicitly_wait(10)
     #input("for address:")
-    driver.find_element_by_xpath("(//h2[@class='account-sub-headers'][contains(text,'')])[5]").click()
+    driver.find_element_by_xpath("(//h2[@class='account-sub-headers'][contains(text(),'Address Book')])").click()
     driver.find_element_by_xpath("//a[@class='btn-secondary']").click()
     driver.implicitly_wait(5)
 
@@ -102,6 +102,7 @@ for i in range (142,145):
 
     driver.implicitly_wait(10)
 
+    """ Second address"""
 
 
     from selenium.webdriver.common.action_chains import ActionChains
