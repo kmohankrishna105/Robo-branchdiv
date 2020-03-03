@@ -40,8 +40,7 @@ def fullpage_screenshot(driver, file):
         part = 0
 
         for rectangle in rectangles:
-            if not previous is None:
-                driver.execute_script("window.scrollTo({0}, {1})".format(rectangle[0], rectangle[1]))
+            if not previous is None:                driver.execute_script("window.scrollTo({0}, {1})".format(rectangle[0], rectangle[1]))
                 print("Scrolled To ({0},{1})".format(rectangle[0], rectangle[1]))
                 time.sleep(0.2)
 
@@ -67,3 +66,10 @@ def fullpage_screenshot(driver, file):
         stitched_image.save(file)
         print("Finishing chrome full page screenshot workaround...")
         return True
+
+from selenium import webdriver
+driver = webdriver.Chrome(executable_path="C:\\Users\mkottak\git\intermix\IMX\GAP_Intermix\\target\classes\webdriver\\chromedriver.exe")
+driver.get("https://www.wikipedia.org/")
+driver.maximize_window()
+
+fullpage_screenshot(driver,"same.png")

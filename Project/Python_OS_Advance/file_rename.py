@@ -30,6 +30,7 @@ for file in glob.glob("*.png"):
     print(type(req_df['Order'][0]))
     try:
         new_name=req_df.loc[req_df['Order'] == int(name),'IMX'].iloc[0]
+        #new_name=req_df.loc[req_df['Order'] == name,'IMX'].iloc[0]
         import shutil
 
         shutil.move(name+'.png', new_name+'.png')

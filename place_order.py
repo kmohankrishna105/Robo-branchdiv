@@ -1,14 +1,7 @@
 from selenium import webdriver
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
-from excel_users import extract_users
-from selenium.webdriver.common.keys import Keys
 import time
 from selenium.webdriver.support.ui import Select
-import openpyxl
+
 loc = ("C:\\Users\\mkottak\\Downloads\\FireShot\\newusers.xls")
 
 

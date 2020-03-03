@@ -1,12 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
-from excel_users import extract_users
-
-
 
 driver=webdriver.Chrome(executable_path="C:\\Users\mkottak\git\intermix\IMX\GAP_Intermix\\target\classes\webdriver\\chromedriver.exe")
 
@@ -36,7 +28,7 @@ loc = ("C:\\Users\\mkottak\\Downloads\\FireShot\\newusers_tax.xls")
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
 
-for i in range (0,2):
+for i in range (14,16):
     # For row 0 and column 0
     email=sheet.cell_value(i, 0)
     firname=sheet.cell_value(i, 1)
@@ -50,6 +42,13 @@ for i in range (0,2):
     city_val2 = sheet.cell_value(i, 7)
     code_val2 = sheet.cell_value(i, 8)
 
+    address3 = sheet.cell_value(i, 9)
+    city_val3 = sheet.cell_value(i, 10)
+    code_val3 = sheet.cell_value(i, 11)
+
+    address4 = sheet.cell_value(i, 12)
+    city_val4 = sheet.cell_value(i, 13)
+    code_val4 = sheet.cell_value(i, 14)
     print(email)
 
     driver.implicitly_wait(9)
@@ -99,9 +98,9 @@ for i in range (0,2):
     driver.find_element_by_id(city).send_keys(city_val)
 
     select1 = Select(driver.find_element_by_id('dwfrm_profile_address_states_state'))
-    select1.select_by_visible_text('Kansas')
+    select1.select_by_visible_text('New York')
 
-    driver.find_element_by_id(code).send_keys("67401")
+    driver.find_element_by_id(code).send_keys("10016")
     driver.find_element_by_id(phone).send_keys("800-871-0711")
 
     driver.find_element_by_name("dwfrm_profile_address_create").click()
@@ -112,9 +111,9 @@ for i in range (0,2):
     driver.find_element_by_xpath("//a[@class='btn-secondary']").click()
     driver.implicitly_wait(5)
 
-    driver.find_element_by_id(idname).send_keys("review no tax")
-    driver.find_element_by_id(fname).send_keys("Rula")
-    driver.find_element_by_id(lname).send_keys("Elali")
+    driver.find_element_by_id(idname).send_keys("no review tax")
+    driver.find_element_by_id(fname).send_keys("David")
+    driver.find_element_by_id(lname).send_keys("Surname")
     driver.find_element_by_id(add1).send_keys(address2)
 
     from selenium.webdriver.support.ui import Select
@@ -125,9 +124,63 @@ for i in range (0,2):
     driver.find_element_by_id(city).send_keys(city_val2)
 
     select1 = Select(driver.find_element_by_id('dwfrm_profile_address_states_state'))
-    select1.select_by_visible_text('Kansas')
+    select1.select_by_visible_text('New York')
 
-    driver.find_element_by_id(code).send_keys("67401")
+    driver.find_element_by_id(code).send_keys("10016")
+    driver.find_element_by_id(phone).send_keys("800-871-0711")
+
+    driver.find_element_by_name("dwfrm_profile_address_create").click()
+
+    driver.implicitly_wait(10)
+
+
+    """third address"""
+
+    driver.find_element_by_xpath("//a[@class='btn-secondary']").click()
+    driver.implicitly_wait(5)
+
+    driver.find_element_by_id(idname).send_keys("review no tax")
+    driver.find_element_by_id(fname).send_keys("Rula")
+    driver.find_element_by_id(lname).send_keys("Elali")
+    driver.find_element_by_id(add1).send_keys(address3)
+
+    from selenium.webdriver.support.ui import Select
+
+    select = Select(driver.find_element_by_id('dwfrm_profile_address_country'))
+    select.select_by_visible_text('United States')
+
+    driver.find_element_by_id(city).send_keys(city_val3)
+
+    select1 = Select(driver.find_element_by_id('dwfrm_profile_address_states_state'))
+    select1.select_by_visible_text('Delaware')
+
+    driver.find_element_by_id(code).send_keys("19960")
+    driver.find_element_by_id(phone).send_keys("800-871-0711")
+
+    driver.find_element_by_name("dwfrm_profile_address_create").click()
+
+    driver.implicitly_wait(10)
+
+    """ fourth address"""
+    driver.find_element_by_xpath("//a[@class='btn-secondary']").click()
+    driver.implicitly_wait(5)
+
+    driver.find_element_by_id(idname).send_keys("no review no tax")
+    driver.find_element_by_id(fname).send_keys("David")
+    driver.find_element_by_id(lname).send_keys("Surname")
+    driver.find_element_by_id(add1).send_keys(address4)
+
+    from selenium.webdriver.support.ui import Select
+
+    select = Select(driver.find_element_by_id('dwfrm_profile_address_country'))
+    select.select_by_visible_text('United States')
+
+    driver.find_element_by_id(city).send_keys(city_val4)
+
+    select1 = Select(driver.find_element_by_id('dwfrm_profile_address_states_state'))
+    select1.select_by_visible_text('Delaware')
+
+    driver.find_element_by_id(code).send_keys("19960")
     driver.find_element_by_id(phone).send_keys("800-871-0711")
 
     driver.find_element_by_name("dwfrm_profile_address_create").click()

@@ -39,9 +39,14 @@ example: 1 of 7,2 of 7,3 of 7.....7 of 7
 c_count=0
 t_count=0
 
+
+#select * from table
 q=[1,2,3,4,5,6,7]
 for item in q:
     t_count = len(q)
     c_count+=1
     print("{} of {}".format(c_count,t_count))
     print(item)
+
+#2== offset
+print(q[:])
