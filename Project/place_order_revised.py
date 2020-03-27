@@ -23,26 +23,27 @@ cart_url = 'https://dev12-na-gapinc.demandware.net/s/Intermix/cart'
 normal1_url = "http://dev12-na-gapinc.demandware.net/s/Intermix/intermix/aisley-knit-cami/8888341964.html"
 normal2_url = "http://dev12-na-gapinc.demandware.net/s/Intermix/hansel-from-basel/back-seam-tulle-sheer-socks/6000375190.html"
 
-
+"""
 preorder1_url = 'https://development-sfcc.intermixonline.com/on/demandware.store/Sites-Intermix-Site/en_US/Product-Variation?pid=93570G&dwvar_93570G_size=70&dwvar_93570G_color=020'
 preorder2_url = 'https://development-sfcc.intermixonline.com/on/demandware.store/Sites-Intermix-Site/en_US/Product-Variation?pid=93570G&dwvar_93570G_size=70&dwvar_93570G_color=020'
 cart_url = 'https://development-sfcc.intermixonline.com/cart'
 normal1_url = "https://development-sfcc.intermixonline.com/on/demandware.store/Sites-Intermix-Site/en_US/Product-Variation?pid=93570G&dwvar_93570G_size=70&dwvar_93570G_color=020"
 normal2_url = "https://development-sfcc.intermixonline.com/on/demandware.store/Sites-Intermix-Site/en_US/Product-Variation?pid=93570G&dwvar_93570G_size=70&dwvar_93570G_color=020"
 
+
+"""
 preorder1_url = 'https://dev12-na-gapinc.demandware.net/s/Intermix/faithfull-the-brand/brigit-mini-dress/6000300198.html'
 preorder2_url = 'http://dev12-na-gapinc.demandware.net/s/Intermix/rag-bone%2Fjean/floral-vintage-tee/6000085244.html'
 cart_url = 'https://dev12-na-gapinc.demandware.net/s/Intermix/cart'
 normal1_url = "http://dev12-na-gapinc.demandware.net/s/Intermix/intermix/aisley-knit-cami/8888341964.html"
 normal2_url = "http://dev12-na-gapinc.demandware.net/s/Intermix/hansel-from-basel/back-seam-tulle-sheer-socks/6000375190.html"
 
-
-"""
 preorder1_url = 'https://dev40-na-gapinc.demandware.net/s/Intermix/faithfull-the-brand/brigit-mini-dress/6000300198.html'
 preorder2_url = 'http://dev40-na-gapinc.demandware.net/s/Intermix/rag-bone%2Fjean/floral-vintage-tee/6000085244.html'
 cart_url = 'https://dev40-na-gapinc.demandware.net/s/Intermix/cart'
 normal1_url = "http://dev40-na-gapinc.demandware.net/s/Intermix/intermix/aisley-knit-cami/8888341964.html"
 normal2_url = "http://dev40-na-gapinc.demandware.net/s/Intermix/hansel-from-basel/back-seam-tulle-sheer-socks/6000375190.html"
+"""
 
 driver.get(cart_url)
 
@@ -62,7 +63,6 @@ driver.find_element_by_xpath("//input[contains(@id,'dwfrm_login_username')]").se
 driver.find_element_by_xpath("//input[contains(@id,'dwfrm_login_password')]").send_keys("Test@123")
 driver.find_element_by_name("dwfrm_login_login").click()
 
-
 driver.execute_script("window.open('');")
 driver.switch_to.window(driver.window_handles[1])
 driver.get(preorder1_url)
@@ -73,7 +73,6 @@ height = driver.execute_script("return document.body.scrollHeight")
 driver.set_window_size(900,height+700)
 driver.save_screenshot("image2.png")
 """
-
 
 driver.execute_script("window.open('');")
 driver.switch_to.window(driver.window_handles[2])
@@ -99,6 +98,7 @@ driver.execute_script("window.open('');")
 driver.switch_to.window(driver.window_handles[4])
 driver.get(normal2_url)
 
+input("Whats next teo")
 
 for i in range (0,4):
     # For row 0 and column 0
@@ -117,7 +117,6 @@ for i in range (0,4):
     pin_details2 = sheet.cell_value(i, 10)
     pin_details3 = sheet.cell_value(i, 12)
     coupon=sheet.cell_value(i,5)
-
 
 
     if q1!="":
@@ -155,7 +154,6 @@ for i in range (0,4):
     driver.switch_to.window(driver.window_handles[0])
     driver.implicitly_wait(8)
     driver.find_element_by_class_name("minicart-quantity").click()
-
     driver.find_element_by_id("dwfrm_cart_couponCode").send_keys(str(coupon))
     driver.find_element_by_id("add-coupon").click()
 
@@ -166,15 +164,11 @@ for i in range (0,4):
         driver.implicitly_wait(1)
         driver.find_element_by_name("dwfrm_cart_checkoutCart").click()
         driver.implicitly_wait(5)
-
         driver.find_element_by_xpath("//input[contains(@id,'dwfrm_billing_paymentMethods_creditCard_number')]").send_keys(str(card_details))
-
         month = Select(driver.find_element_by_id('dwfrm_billing_paymentMethods_creditCard_expiration_month'))
         month.select_by_visible_text('10 October')
-
         year = Select(driver.find_element_by_id('dwfrm_billing_paymentMethods_creditCard_expiration_year'))
         year.select_by_visible_text('2020')
-
         driver.find_element_by_xpath("//input[contains(@id,'dwfrm_billing_paymentMethods_creditCard_cvn')]").send_keys(
             '737')
     except:
@@ -184,15 +178,11 @@ for i in range (0,4):
 
     try:
         driver.find_element_by_xpath("//button[@name='dwfrm_billing_save']").click()
-
         shipmethod = Select(driver.find_element_by_xpath("//select[@id='shipping-method-list']"))
-
         shipmethod.select_by_visible_text(str(ship_method))
     except:
         input("Save button issue")
         pass
-
-
 
     try:
         if gift_details1 != "":

@@ -2,9 +2,9 @@ from selenium import webdriver
 
 driver=webdriver.Chrome(executable_path="C:\\Users\mkottak\git\intermix\IMX\GAP_Intermix\\target\classes\webdriver\\chromedriver.exe")
 
-#driver.get("https://dev40-na-gapinc.demandware.net/on/demandware.store/Sites-Intermix-Site/en_US/Home-Show")
+driver.get("https://dev07-na-gapinc.demandware.net/on/demandware.store/Sites-Intermix-Site/en_US/Home-Show")
 
-driver.get("https://dev12-na-gapinc.demandware.net/on/demandware.store/Sites-Intermix-Site/en_US/Home-Show")
+#driver.get("https://development-sfcc.intermixonline.com/on/demandware.store/Sites-Intermix-Site/en_US/Cart-SubmitForm")
 
 modalLoginRegister ="login-register"
 mobLoginRegister = ".account-login-page"
@@ -28,7 +28,7 @@ loc = ("C:\\Users\\mkottak\\Downloads\\FireShot\\newusers_tax.xls")
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
 
-for i in range (14,16):
+for i in range (18,21):
     # For row 0 and column 0
     email=sheet.cell_value(i, 0)
     firname=sheet.cell_value(i, 1)
@@ -112,8 +112,8 @@ for i in range (14,16):
     driver.implicitly_wait(5)
 
     driver.find_element_by_id(idname).send_keys("no review tax")
-    driver.find_element_by_id(fname).send_keys("David")
-    driver.find_element_by_id(lname).send_keys("Surname")
+    driver.find_element_by_id(fname).send_keys("Sanju")
+    driver.find_element_by_id(lname).send_keys("Sheik")
     driver.find_element_by_id(add1).send_keys(address2)
 
     from selenium.webdriver.support.ui import Select
@@ -166,8 +166,8 @@ for i in range (14,16):
     driver.implicitly_wait(5)
 
     driver.find_element_by_id(idname).send_keys("no review no tax")
-    driver.find_element_by_id(fname).send_keys("David")
-    driver.find_element_by_id(lname).send_keys("Surname")
+    driver.find_element_by_id(fname).send_keys("Kumar")
+    driver.find_element_by_id(lname).send_keys("Khan")
     driver.find_element_by_id(add1).send_keys(address4)
 
     from selenium.webdriver.support.ui import Select

@@ -32,6 +32,15 @@ for i in range(length):
     arr2d_new[i]=i
 print(arr2d_new)
 
+
+num=0
+for i in range(length):
+    if i==num:
+        arr2d_new[i] = i
+    num = num + 1
+print(arr2d_new)
+
+
 #slicing an array into array
 print(arr2d_new[[3,4,7]])
 

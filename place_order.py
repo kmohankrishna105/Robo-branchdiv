@@ -32,11 +32,7 @@ normal2_url="https://dev12-na-gapinc.demandware.net/s/Intermix/galvan/sash-neck-
 
 driver.get(cart_url)
 
-
-import page_screenshot
-
-page_screenshot
-
+s
 
 
 driver.maximize_window()
